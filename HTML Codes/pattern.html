@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns</title>
+</head>
+<body>
+    <h3>User Details</h3>
+    <form action="./TimeTable.html" autocomplete="off">
+    <label for="pwd">Password:</label>
+    <input type="text" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+    <label for="email">Email</label>
+    <input type="email" placeholder="Email" name="Email" id="email" pattern="[a-z\d!@#$_^&*]+@[a-z]{5}\.com"><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <!-- Phone Number Input with Pattern -->
+    <label for="phone">Phone Number (10 digits):</label><br>
+    <input type="tel" id="phone" name="phone"
+           pattern="[0-9]{10}"
+           placeholder="Enter 10-digit number"
+           required><br><br>
+
+    <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
